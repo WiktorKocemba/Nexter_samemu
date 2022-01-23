@@ -254,4 +254,33 @@ body {
 
 .footer {
   background-color: #101d2c;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 8rem; }
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  list-style: none;
+  align-items: center;
+  grid-gap: 1rem; }
+  .nav__link:link, .nav__link:visited {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: "Nunito", sans-serif;
+    transition: all .2s; }
+  .nav__link:hover, .nav__link:active {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-0.3rem); }
+
+.copyright {
+  font-size: 1.4rem;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 6rem;
+  color: #aaa; }
